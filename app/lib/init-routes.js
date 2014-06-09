@@ -19,7 +19,7 @@ function load(app, fn){
 
   app.get('/', dbg, home.index);
   app.get('/locations/new', dbg, locations.new);
-  // app.get('/locations', dbg, locations.index);
+  app.get('/locations', dbg, locations.index);
   app.post('/locations', dbg, locations.create);
   console.log('Routes Loaded');
   fn();
