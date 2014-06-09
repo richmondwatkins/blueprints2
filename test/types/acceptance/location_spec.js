@@ -1,3 +1,5 @@
+/* global describe, it, before, beforeEach */
+/* jshint expr:true */
 'use strict';
 
 process.env.DBNAME = 'blueprint-test';
@@ -59,7 +61,7 @@ describe('locations', function(){
       .get('/locations')
       .end(function(err, res){
         expect(res.status).to.equal(200);
-        expect(res.text).to.include('<p>Gentrify pickled raw denim, vinyl master cleanse meggings beard messenger</p>')
+        expect(res.text).to.include('<p>Gentrify pickled raw denim, vinyl master cleanse meggings beard messenger</p>');
         console.log(res.text);
         done();
       });

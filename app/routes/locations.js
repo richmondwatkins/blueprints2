@@ -1,7 +1,7 @@
 'use strict';
 
 var traceur = require('traceur');
-var Location = traceur.require(__dirname + '/../models/location.js')
+var Location = traceur.require(__dirname + '/../models/location.js');
 
 exports.new = (req, res)=>{
   console.log('MADE IT TO NEW');
